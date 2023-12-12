@@ -32,8 +32,8 @@ def descargar_archivo(url, carpeta_local='',nombre=None):
 
         print(f'Archivo descargado exitosamente en: {ruta_local}')
 
-    except requests.exceptions.RequestException as e:
-        print(f'Error al descargar el archivo: {e}')
+    except Exception as e:
+        pass
     
 
 
