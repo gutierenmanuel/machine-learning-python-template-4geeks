@@ -122,3 +122,23 @@ def plot_numerical_data(dataframe):
 
         # Mostrar el plot
         plt.show()
+
+#------
+
+def ver_dataframe_completo():
+
+    # Configura Pandas para mostrar DataFrames completos sin truncar
+    pd.set_option('display.max_columns', None)
+    pd.set_option('display.max_rows', None)
+    pd.set_option('display.max_colwidth', None)
+
+def ver_dataframe_columnas():
+
+    pd.set_option('display.max_columns', None)
+    pd.set_option('display.max_colwidth', None)
+
+def restaurar_ajuste():
+
+    # Restaura el valor de pandas para mostrar dataframes truncados
+    pd.reset_option('all')
+    
